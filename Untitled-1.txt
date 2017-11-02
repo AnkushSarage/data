@@ -1,0 +1,13 @@
+<?php
+ 
+ $link = mysqli_connect("localhost", "root","","aceethethirdeye");
+$sql ="select * from newsletterdata";
+
+$result = mysqli_query($link,$sql);
+while($row =mysql_fetch_array($result)) {
+echo "<img scr='Img.3/".$row[File1]."'>";
+echo "</div>";
+
+}
+
+?>
